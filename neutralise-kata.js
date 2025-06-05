@@ -21,8 +21,9 @@
 
 function neutralise(s1, s2){
     let answer = '';
-    for(let i=0; Math.min(s1.length, s2.length);i++){
-        answer += s1[i] === s2[i] ? s1[i] : '0';
+    for(let i=0; Math.min(s1.length, s2.length);i++){ //this loop increments from 0 by adding 1 to every iteration
+        //and the Math.min method  checks our arguments and returns smallest argnts in terms of nbrs.
+        answer += s1[i] === s2[i] ? s1[i] : '0'; // use ternary operator to check for true or falsy of the statement.
     }
     return answer;
 }
